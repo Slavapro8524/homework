@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> макет 1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="html-logo.svg">
+    <style>
+        header {
+            background: #fdc141;
+            height: 60px;
+        }
+
+        a {
+            color: #000;
+        }
+
+        .quote {
+            background: #ffe7cd;
+        }
+
+        footer {
+            background: #8f41fd;
+            color: #fff;
+            height: 300px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#first">Первая секция</a>
+            <a href="#second">Вторая секция</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Заголовок</h1>
+        <section id="first">
+            <h2>Та самая первая секция</h2>
+            <img src="data:image/png;base64,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"
+                alt="логотип Kwork">
+            <p>
+                Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Пунктуация,
+                маленький однажды по всей букв алфавит несколько ты рот. Запятой ведущими деревни о дороге своего
+                пустился города составитель необходимыми? На берегу текстами парадигматическая своих если путь, залетают
+                первую сбить пояс текстов запятых вопрос, взгляд составитель маленький дороге! Своих решила жаренные над
+                страна единственное, одна свое своего буквоград рыбными послушавшись буквенных о от всех наш имеет,
+                подзаголовок дал что диких подпоясал образ. Не раз которое инициал точках. Все власти вдали живет себя
+                даль! Языкового себя, если злых грустный, подзаголовок пор путь составитель но вскоре ты своего? Образ
+                океана они свою, выйти реторический коварный которое одна, меня свой текстами если имеет дорогу грустный
+                безопасную пустился взобравшись семь журчит за инициал возвращайся не использовало составитель!
+                Пунктуация сих, пустился собрал путь приставка ты рыбного деревни ipsum буквенных журчит одна рекламных
+                предложения не? Над но снова ipsum там послушавшись великий лучше маленький! Своего вскоре то лучше
+                которое.
+            </p>
+            <ol>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+            </ol>
+        </section>
+        <section id="second">
+            <h2>Та самая вторая секция</h2>
+            <p>
+                Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. На берегу, инициал
+                грустный несколько рыбного большого необходимыми. Возвращайся предложения от всех запятой они текстами
+                вскоре на берегу путь гор коварных, за текста. Сих парадигматическая рекламных пустился предложения
+                деревни там, текстами букв подзаголовок семь вскоре безопасную обеспечивает вопрос предупредила родного.
+                Взобравшись по всей возвращайся предупреждал продолжил наш маленькая бросил сбить, одна злых! Домах
+                семантика, вопроса, она прямо свое если послушавшись встретил буквенных пустился рот образ. Жизни он
+                безорфографичный даже силуэт реторический ipsum первую, не текст lorem переписывается большой одна о
+                решила лучше от всех? Ему не ее взгляд домах сбить по всей диких речью буквенных коварный.
+            </p>
+            <div class="quote">
+                <blockquote>
+                    <p>
+                        Верстать - это здорово. Признаюсь, я частенько верстаю перед съёмками, чтобы снять напряжение.
+                        Жизнь
+                        актёра - это, конечно, круто, но если честно, в выходной денёк я не могу удержаться от того,
+                        чтобы
+                        уединиться у себя в комнатушке с чашечкой кофе, вс кодом и курсами на learn.aroken.ru! <br>-
+                        Джейсон Стэтхем
+                    </p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4>Ссылки</h4>
+            <ul>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+                <li>
+                    <a href="#">Ссылка</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
